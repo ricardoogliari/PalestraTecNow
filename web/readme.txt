@@ -1,0 +1,1 @@
+A página web apenas se liga ao banco de dados Firebase e mostra os dados em tempo real, conforme mudanças nos dados. 

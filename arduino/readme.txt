@@ -1,0 +1,2 @@
+Sensor de Luz: lê o valor do sensor de luz em uma placa arduino e envia para um banco de dados Firebase.
+Liga Lampada: Monta um sevidor com Express.js que liga e desliga uma lâmpada ligada em um arduino.

@@ -1,0 +1,29 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://unpkg.com/vue"></script>
+        <script src="https://www.gstatic.com/firebasejs/4.1.1/firebase.js"></script>
+        <script>
+        // Initialize Firebase
+        var config = {
+            apiKey: "AIzaSyCB-74Q-x4UzfVxeiAXgvkqBQc9Un7Qy9k",
+            authDomain: "arduinofirebase-21dc5.firebaseapp.com",
+            databaseURL: "https://arduinofirebase-21dc5.firebaseio.com",
+            projectId: "arduinofirebase-21dc5",
+            storageBucket: "arduinofirebase-21dc5.appspot.com",
+            messagingSenderId: "355951549273"
+        };
+        firebase.initializeApp(config);
+        </script>
+    </head>
+<body ng-app="myApp" ng-controller="myCtrl">
+<h1>SENSOR DE LUZ</h1>
+<h2 id="valor"></h2>
+<script>
+    firebase.database().ref('light').on('value', function(snapshot) {
+        document.getElementById("valor").innerHTML = snapshot.val();
+    });
+</script>
+</body>
+</html>
