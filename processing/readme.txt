@@ -1,0 +1,1 @@
+Código em Processing que ouve um som e define se é a nota Dó ou Si em uma Ocarina, instrumento de sopro indígena.
